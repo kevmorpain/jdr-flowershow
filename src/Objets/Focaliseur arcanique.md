@@ -1,0 +1,1 @@
+Un focaliseur arcanique est un objet spécial (orbe, boule de cristal, baguette, bâton, sceptre) conçu pour canaliser la puissance de sorts de la magie des arcanes. Un ensorceleur, un [[magicien]] ou un occultiste peut utiliser ce type d'objet comme focaliseur d'incantation.

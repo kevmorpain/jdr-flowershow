@@ -69,6 +69,8 @@ const computedFields: ComputedFields = {
         const stripTitle = await remark().use(stripMarkdown).process(title);
         return stripTitle.toString().trim();
       }
+
+      return doc._raw.flattenedPath.replace(/^(.+?\/)*/, "");
     },
   },
   description: {
