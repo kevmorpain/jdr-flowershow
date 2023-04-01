@@ -1,12 +1,12 @@
 import { withContentlayer } from "next-contentlayer";
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false
+const isProd = process.env.NODE_ENV === 'production'
 
 let assetPrefix = '/'
 let basePath = ''
 
-if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+if (isProd) {
+  const repo = 'jdr-flowershow'
 
   assetPrefix = `/${repo}/`
   basePath = `/${repo}`
