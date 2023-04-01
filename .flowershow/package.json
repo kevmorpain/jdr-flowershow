@@ -8,7 +8,7 @@
     "prebuild": "npm run generate",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export",
+    "export": "next export",
     "generate": "contentlayer build && cross-env NODE_OPTIONS=\"--experimental-json-modules --experimental-modules\" node -r esbuild-register ./scripts/postbuild.mjs"
   },
   "dependencies": {
