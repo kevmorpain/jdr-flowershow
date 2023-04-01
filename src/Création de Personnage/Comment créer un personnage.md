@@ -1,3 +1,5 @@
+_Page complète sur [AideDD](https://www.aidedd.org/regles/creation-de-perso/)_
+
 ## 1. Choisir une [[~Liste des races|race]]
 Tout personnage a une race, terme désignant son espèce humanoïde parmi toutes celles qu'offre D&D.
 
