@@ -19,6 +19,18 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+      
+      - name: Configure Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: '**/.github/workflows/*.yml'
+
+      - name: Build
+        run: |
+          npx flowershow@latest build
+          npx flowershow@latest export
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
