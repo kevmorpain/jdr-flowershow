@@ -29,10 +29,8 @@ jobs:
 
       - name: Build
         run: |
+          npx flowershow@latest build
           npx flowershow@latest export
-
-      - name: Verify build
-        run: ls -la out
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
