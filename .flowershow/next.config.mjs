@@ -1,11 +1,11 @@
 import { withContentlayer } from "next-contentlayer";
 
-const isProd = process.env.NODE_ENV === 'production'
+const isDev = process.env.NODE_ENV === 'development'
 
 let assetPrefix = '/'
 let basePath = ''
 
-if (isProd) {
+if (!isDev) {
   const repo = 'jdr-flowershow'
 
   assetPrefix = `/${repo}/`
